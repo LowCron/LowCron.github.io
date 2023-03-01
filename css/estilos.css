@@ -13,12 +13,19 @@
  .col-12 {width: 100%;}
   
 
+ .header {
+   border: 1px solid red;
+   padding: 15px;
+ }
+ 
+ .row::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
 
 
-
-
-
- * {
+ * { 
    color: whitesmoke;
    box-sizing: border-box;
 }
@@ -33,7 +40,7 @@ h2 {
 }
 section {
    width: 200px;
-   border: 50px solid red;
+   border: 50px solid blue;
    padding: 5px;
    margin: 30px 20px 40px 15px
 
@@ -55,4 +62,7 @@ body{
    padding: 15px;
    border: 1px solid red;
  }
- 
+ img{
+   width:300px ;
+   height: 300px;
+ }
