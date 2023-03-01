@@ -1,0 +1,215 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(245, 245, 245);
+}
+.darkmode{
+    background-color: #252525;
+    color: whitesmoke;
+}
+h1{
+    font-size: 3em;
+    
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: oblique;
+    text-decoration: underline;
+}
+h3{text-decoration: underline;}
+p{
+    padding: 13px 20px;
+    font-size: 18px;
+}
+header{
+    background-color: rgb(67, 107, 67);
+    margin-bottom: 30px;
+    color: #000000;
+}
+.ocultar{
+    max-width: 1400px;
+}
+/*Seccion del encabezado y del mostrador*/
+.Pared-borde{
+    border-left: 3px  solid rgba(78, 75, 75, 0.459);
+    border-right: 3px solid rgba(78, 75, 75, 0.459);
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    max-width: 1400px;
+}
+#darkmode{
+    font-size: 30px;
+}
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Mostrar{
+    color:rgba(0, 0, 0, 0.473);
+    cursor: pointer;
+}
+.Mostrar:hover{
+    color: blueviolet;
+}
+section .contenedor{
+    height: 240px;
+    border: 2px solid;
+    border-color: rgba(182, 182, 182, 0.993);
+    justify-content:space-between;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.direccionar{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(233, 232, 232);
+    align-items: end;
+    height: 35%;
+    width: 100%;
+    padding: 0px 6px 10px 6px;
+    font-size: 13px;
+    text-shadow: 0px 0px 3px rgba(88, 82, 82, 0.555);
+    justify-content: center;
+    border-top: 2px solid rgb(168, 168, 170);
+    overflow: hidden;
+}
+section img{
+    margin: 0;
+    height: 140px;
+    width: 140px;
+    margin-top: 0px;
+    border-radius: 50%;
+    border: 5px outset rgb(9, 187, 9);
+}
+/*Customizando los iconos de Font Awesome*/
+.direccionar li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.agrandar-icon{
+    font-size: 40px;
+    text-shadow: none
+}
+/*seccion carta de presentacion*/
+.Carta{
+    background-color: rgb(240, 240, 240);
+    text-align: justify;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 6px 6px 13px 0px #000000;
+    box-shadow: 6px 6px 13px 0px #000000;
+    border: 2px solid rgb(220, 220, 220);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    color: #000000;
+}
+/*seccion de informacion personal*/
+.lista-info-personal{padding:  15px 35px;}
+.lista-info-personal li{list-style:square;}
+.info p{font-family: 'Roboto', sans-serif;}
+/*Seccion de la experiencia para movil*/
+.contenido-exp{ padding: 0px 10px;}
+.contenido-exp p {
+    padding-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*seccion Habilidades*/
+.habilidades--contenido{
+    padding: 0px 20px;
+}
+.habilidades--contenido li{
+    padding-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: square;
+}
+.contador-de-clics{
+ display: none;
+}
+.contador-de-clics p{ 
+    padding: 0;
+    font-size: 14px;
+}
+/*Empieza el media para la version desktop*/
+
+@media (min-width: 850px){
+    p{
+        font-size: 22px;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        min-width: 100vh;
+        min-height: 100vh;
+    }
+    header{
+        width: 100%;
+    }
+    header .contenedor {
+        flex-direction: row;
+        width: 100%;
+    }
+    .navegacion{
+        width: 60%;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
+    .navegacion a{
+        margin: 0px 10px;
+    }
+    section .contenedor{
+        height: 350px;
+        width: 600px;
+    }
+    section img{
+        margin-top: 30px;
+    }
+    .lista-info-personal{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    #habilidades{width: 100%;}
+    .agrupacion{display: flex;
+        padding-left: 15px;
+    }
+    .habilidades--contenido{
+        flex-direction: row;
+        float: left;
+        width: 100%;
+    }
+    .habilidades--contenido li{
+        font-size: 22px;
+    }
+    .contador-de-clics{
+        display: flex;
+        flex-direction: column;
+        height: 75px;
+        justify-content: center;
+        align-items: end;
+        max-width: 1400px;
+        margin-top: auto;
+        width: 100%;
+    }
+}
