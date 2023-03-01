@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e57257a560.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="contenedor" >
+            <div>    
+                <h1>Leroy Day</h1>
+                <p>Aplicante al Emprendimiento </p>
+            </div>
+            <nav class="navegacion">
+                <a class="Mostrar Cambio-de-fondo" id="darkmode" role="button" onclick="darkmode()">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                </a>
+                <a class="Mostrar" id="Boton-carta-sup" href="#Carta-de-Presentacion">Carta de presentacion</a>
+                <a class="Mostrar" id="boton-info-sup"  href="#info-personal">Informacion Personal</a>
+                <a class="Mostrar" id="boton-experiencia-sup" href="#experiencia">Experiencia</a>
+                <a class="Mostrar" id="boton-habilidades-sup" href="#habilidades">Habilidades</a>
+            </nav> 
+        </div>
+    </header>
+    <section >
+        <div class="contenedor">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Imagen del postulante">
+            <ul class="direccionar">
+                <li class="Mostrar" id="Boton-carta"><i class="fa-regular fa-envelope agrandar-icon"></i> Carta de Presentacion</li>
+                <li class="Mostrar" id="boton-info"><i class="fa-sharp fa-solid fa-circle-user agrandar-icon"></i> Sobre Mi</li>
+                <li class="Mostrar" id="boton-experiencia"><i class="fa-solid fa-desktop agrandar-icon"></i> Experiencia</li>
+                <li class="Mostrar" id="boton-habilidades"><i class="fa-regular fa-hand agrandar-icon"></i> Habilidades</li>
+            </ul>
+        </div>
+    </section>
+    <section class="ocultar" id="Carta-de-Presentacion">
+        <div class="Carta">
+            <article class="contenido-de-la-carta">
+                <h2>Carta de Presentacion</h2>
+                <p>Al departamento de RRHH de la empresa</p>
+                <p>Me gustaría integrarme en el Departamento de Desarrollo de su empresa, ya que estoy capacitado y tengo las habilidades para desarrollar diferentes tareas</p>
+                <p>Recientemente he finalizado mis estudios en Administración y Dirección de Empresas en la Universidad de Madrid. La metodología aplicada en el centro, orientada a la acción y resultados, me ha permitido desarrollar una gran capacidad de resolución y  adquirir una perspectiva global de todas las áreas de la empresa. A lo largo de mi formación, he potenciado mi espíritu de trabajo en equipo, iniciativa e implicación en las tareas, así como mi conocimiento de idiomas, inglés y francés</p>
+                <p>También he tenido oportunidad de desarrollar mis primeras experiencias laborales mediante prácticas en distintas empresas, cuyo detalle encontrará en el Currículum Vitae que adjunto</p>
+                <p>Estoy a su entera disposición para realizar una entrevista y las pruebas que considere oportunas.</p>
+                <p>Agradeciéndole su atención, le saluda atentamente                </p>
+                <p>Leroy Day</p>
+            </article>
+        </div>
+    </section >
+    <section class="ocultar Pared-borde" id="info-personal">
+        <div class="info">
+            <h2>Sobre Mi</h2>
+            <p>Soy estudiante de Economía y poseo excelentes habilidades de análisis, planificación y trabajo en equipo que he adquirido durante mis estudios universitarios, las prácticas en el sector logístico y algunos trabajos a tiempo parcial.</p>
+            <p>Intento insertame en esta hambito laboral para desarrollar mi habilidades y conocimientos, aspirado siempre a mejorar.</p>
+            <ul class="lista-info-personal">
+                <li>Email: leroy.day@example.com.</li>
+                <li>Direccion: 6873 Dogwood Ave.</li>
+                <li>Telefono: (654) 740-0417.</li>
+                <li>Fecha de Nacimiento: 5/4/1995.</li>
+                <li>Dni:39432319.</li>
+                <li>Titulado en Administración y Dirección de Empresas en la universidad de la Matanza</li>
+            </ul>
+        </div>
+        
+    </section>
+    <section class="ocultar Pared-borde" id="experiencia">
+        <!--div class="exp--contenido"-->
+        <h2>Experiencia laboral</h2>
+        <div class="contenido-exp">
+            <h3>Junior contable</h3>
+            <ul class="Sub-info">
+                <li>Empresa Epsilon</li>
+                <li>2019-2021</li>
+            </ul>
+            <p>Trabaje dos años en este puesto pare la empresa Epsilon, alli aprendi muchas de las habilidades para desenvolverme en el ambito del ordenador y como manejar la rutina del trabajo en equipo.</p>
+        </div>
+        <div class="contenido-exp">
+            <h3>Programador Junior</h3>
+            <ul class="Sub-info">
+                <li>Freelancer-Trabajador independiente</li>
+                <li>2022-Presente</li>
+            </ul>
+            <p>Trabaje independientemente por un año en el que aprendi los manejos de tiempos y responsabilidades a una escala muy diferente que anteriores experiencias. Por lo que desarrolle un mejor manejo de las herramientas y orientacion de los objetivos, tanto los macro-objeticos como los micro.</p>
+        </div>
+    </section>
+    <section class="ocultar Pared-borde" id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="agrupacion">
+
+            <div class="habilidades--contenido">
+                <ul>
+                    <li>Aprendo con rapidez, busco desafio constante.</li>
+                    <li>Capacidad de trabajar en equipo.</li>
+                    <li>Autonomia, busco manera de ser resolutivo y proactivo.</li>
+                    <li>Eficiencia, intento de que mis resultados siempre sean los mejores que pueda dar.</li>
+                </ul>
+            </div>
+            <div class="habilidades--contenido ">
+                <ul>
+                    <li>Ingles intermedio</li>
+                    <li>Paquete office, Excel, Word, Outlook, Power Point</li>
+                    <li>Manejo basico de Html, Css y JavaScript</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="contador-de-clics Pared-borde">
+        <p>Cuantos Clics has hecho</p>
+        <p id="cliksTotales"></p> <!--puede llegar a mil?-->
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
